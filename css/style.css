@@ -43,7 +43,7 @@ a {
 }
 
 ::selection {
-    background: #0b6658;
+    background: #087f6b;
     color: #ffffff;
 }
 
@@ -53,9 +53,9 @@ a {
 ========================================================= */
 
 :root {
-    --primary: #0b6658;
-    --primary-dark: #06483e;
-    --primary-soft: #e8f3f0;
+    --primary: #087f6b;
+    --primary-dark: #045c4d;
+    --primary-soft: #e5f4f0;
 
     --gold: #b8954a;
     --gold-dark: #947331;
@@ -78,10 +78,10 @@ a {
     --radius-small: 10px;
 
     --shadow:
-        0 20px 55px rgba(23, 50, 44, 0.09);
+        0 20px 55px rgba(4, 92, 77, 0.09);
 
     --shadow-small:
-        0 10px 30px rgba(23, 50, 44, 0.07);
+        0 10px 30px rgba(4, 92, 77, 0.07);
 
     --transition: 0.3s ease;
 }
@@ -190,13 +190,13 @@ p {
     color: var(--white);
 
     box-shadow:
-        0 8px 22px rgba(11, 102, 88, 0.2);
+        0 8px 22px rgba(4, 92, 77, 0.20);
 }
 
 .btn-primary:hover {
     background: var(--primary-dark);
     box-shadow:
-        0 12px 28px rgba(11, 102, 88, 0.25);
+        0 12px 28px rgba(4, 92, 77, 0.25);
 }
 
 .btn-wa {
@@ -434,9 +434,9 @@ p {
     background:
         linear-gradient(
             90deg,
-            rgba(4, 48, 41, 0.9) 0%,
-            rgba(6, 72, 62, 0.68) 43%,
-            rgba(6, 72, 62, 0.25) 72%,
+            rgba(4, 60, 50, 0.90) 0%,
+            rgba(4, 92, 77, 0.68) 43%,
+            rgba(4, 92, 77, 0.25) 72%,
             rgba(0, 0, 0, 0.05) 100%
         );
 }
@@ -790,7 +790,7 @@ p {
 
     border-radius: 30px;
 
-    background: rgba(11, 102, 88, 0.92);
+    background: rgba(8, 127, 107, 0.92);
 
     color: var(--white);
 
@@ -1728,8 +1728,8 @@ footer {
         background:
             linear-gradient(
                 90deg,
-                rgba(4, 48, 41, 0.92),
-                rgba(6, 72, 62, 0.7)
+                rgba(4, 60, 50, 0.92),
+                rgba(4, 92, 77, 0.70)
             );
     }
 
