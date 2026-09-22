@@ -974,11 +974,148 @@ p {
 }
 
 .siteplan-image img {
+    display: block;
+
+    width: 100%;
+
     max-height: 650px;
 
     border-radius: 11px;
 
     object-fit: contain;
+}
+
+
+/* =========================================================
+   SITE PLAN INTERAKTIF
+========================================================= */
+
+.siteplan-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+
+/* SEMUA UNIT */
+
+.unit {
+    cursor: pointer;
+
+    pointer-events: auto;
+
+    transition:
+        fill 0.2s ease,
+        stroke 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+/* =========================================================
+   3 DATA UNIT
+   WARNA DIBUAT BERBEDA AGAR MUDAH
+   MENGETAHUI POSISI SETIAP BLOK
+========================================================= */
+
+
+/* A01 = MERAH */
+
+.unit[data-unit="A01"] {
+    fill: rgba(255, 0, 0, 0.35);
+
+    stroke: red;
+
+    stroke-width: 2;
+}
+
+
+/* A02 = HIJAU */
+
+.unit[data-unit="A02"] {
+    fill: rgba(0, 128, 0, 0.35);
+
+    stroke: green;
+
+    stroke-width: 2;
+}
+
+
+/* A03 = BIRU */
+
+.unit[data-unit="A03"] {
+    fill: rgba(0, 0, 255, 0.35);
+
+    stroke: blue;
+
+    stroke-width: 2;
+}
+
+
+/* =========================================================
+   HOVER UNIT
+========================================================= */
+
+.unit:hover {
+    fill-opacity: 0.65;
+
+    stroke-width: 3;
+
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   LEGEND SITE PLAN
+========================================================= */
+
+.siteplan-legend {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 24px;
+
+    margin-top: 20px;
+
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+}
+
+.legend-color {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 4px;
+
+    display: inline-block;
+}
+
+.legend-color.tersedia {
+    background: rgba(46, 125, 50, 0.6);
+}
+
+.legend-color.booking {
+    background: rgba(251, 192, 45, 0.7);
+}
+
+.legend-color.terjual {
+    background: rgba(198, 40, 40, 0.6);
 }
 
 
@@ -1316,7 +1453,9 @@ p {
     filter: brightness(0.88);
 }
 
+
 /* Foto pertama dibuat besar */
+
 .gallery-grid img:first-child {
     grid-row: span 2;
 }
